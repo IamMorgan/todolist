@@ -1,7 +1,7 @@
 import React from 'react';
 import c from './content.module.css';
-import Business from './business/business';
 import { sendTextAction } from '../../redux/contentReducer';
+import TodoList from '../../containers/todoList';
 
 
 
@@ -9,7 +9,7 @@ import { sendTextAction } from '../../redux/contentReducer';
 
 const Content = (props) => {
 	
-
+	
 	
 	let newText = React.createRef();
 	let sendText = () => {
@@ -22,7 +22,7 @@ const Content = (props) => {
 			<textarea className={c.text} ref={newText} placeholder='Enter here'/>
 			<button className={c.btn} onClick={sendText}>Add business</button>
 			<div className={c.business}>
-				<Business />
+				<TodoList />
 			</div>
 		</div>
 	)
