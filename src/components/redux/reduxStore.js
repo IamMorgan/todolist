@@ -6,6 +6,6 @@ let reducers = combineReducers({
 	content:contentReducer
 });
 
-let store = createStore(reducers);
+const store = createStore(reducers);
 
 export default store;

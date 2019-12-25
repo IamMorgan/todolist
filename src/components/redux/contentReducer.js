@@ -8,7 +8,7 @@ let initialState = {
 }
 
 
-const contentReducer = (state, action) => {
+const contentReducer = (state = initialState, action) => {
 
 	return state;
 }
