@@ -7,7 +7,7 @@ import Business from './business/business';
 
 
 const Content = (props) => {
-	
+	console.log(props)
 	let sendText = () => {
 		props.dispatch();
 	}
