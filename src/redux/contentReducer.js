@@ -13,6 +13,9 @@ const contentReducer = (state = initialState, action) => {
 	return state;
 }
 
+export const sendTextAction = () => {
+	
+}
 
 
 export default contentReducer;

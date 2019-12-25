@@ -7,7 +7,7 @@ import Content from './components/content/content';
 
 
 function App(props) {
-  
+	
   return (
     <div className="App">
         <Header />
@@ -15,6 +15,7 @@ function App(props) {
         <Content store={props.store}/>
       </div>
     </div>
+	
   );
 }
 

@@ -1,21 +1,25 @@
 import React from 'react';
 import c from './content.module.css';
 import Business from './business/business';
+import { sendTextAction } from '../../redux/contentReducer';
 
 
 
 
 
 const Content = (props) => {
-	console.log(props)
+	
+
+	
+	let newText = React.createRef();
 	let sendText = () => {
-		props.dispatch();
+		props.dispatch(sendTextAction());
 	}
 	
 	return (
 		<div className={c.content}>
 			<p className={c.title}>Enter your business</p>
-			<textarea className={c.text} placeholder='Enter here'/>
+			<textarea className={c.text} ref={newText} placeholder='Enter here'/>
 			<button className={c.btn} onClick={sendText}>Add business</button>
 			<div className={c.business}>
 				<Business />
