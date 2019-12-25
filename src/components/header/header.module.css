@@ -1,0 +1,17 @@
+.header img {
+	height: 60px;
+}
+.header {
+	height: 60px;
+	background-color: rgb(16, 207, 102);
+}
+.title {
+	position: absolute;
+	display: inline-block;
+	font-size: 30px;
+	margin: 10px;
+	margin-left: 50px;
+}
+.ver {
+	float: right;
+}
