@@ -5,7 +5,7 @@ let initialState = {
 		{id: 1,todo: 'buy candy'},
 		{id: 2,todo: 'buy gun'}
 	],
-	newTodoData: []
+	newTodoData: ['']
 }
 
 
