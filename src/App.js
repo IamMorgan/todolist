@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/header';
 import Content from './components/content/content';
+import store from './redux/reduxStore';
+import {Provider} from 'react-redux';
 
 
 
@@ -12,7 +14,9 @@ function App(props) {
     <div className="App">
         <Header />
       <div>
-        <Content store={props.store}/>
+      <Provider store={store}>
+        <Content />
+      </Provider>
       </div>
     </div>
 	

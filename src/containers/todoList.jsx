@@ -3,10 +3,11 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 class TodoList extends Component {
+	
 	render () {
 		return (
 			<div>
-				123
+				{this.props.content}
 			</div>
 		)
 	}
@@ -20,4 +21,4 @@ let mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps) (TodoList);
+export default connect(mapStateToProps, null)(TodoList);
