@@ -7,8 +7,10 @@ class TodoList extends Component {
 	render () {
 		return (
 			<div>
-				{this.props.content}
+				{this.props.content.todoData.todo}
+				{console.log(this.props.content.todoData)}
 			</div>
+			
 		)
 	}
 }

@@ -1,9 +1,9 @@
 
 
 let initialState = {
-	todoData: [
-		{todo: 'buy candy'}
-	],
+	todoData: {
+		todo: 'buy candy'
+	},
 	newTodoData: ''
 }
 
