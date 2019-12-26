@@ -8,7 +8,7 @@ class TodoList extends Component {
 		return (
 			<div>
 				{this.props.content.todoData.todo}
-				{console.log(this.props.content.todoData)}
+				{console.log(this.props.content)}
 			</div>
 			
 		)
@@ -23,4 +23,4 @@ let mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, null)(TodoList);
+export default connect(mapStateToProps)(TodoList)
