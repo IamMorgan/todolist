@@ -9,8 +9,10 @@ import TodoList from '../../containers/todoList';
 
 const Content = (props) => {
 	
+	console.log(props)
 	
-	
+	let text = '123'
+
 	let newText = React.createRef();
 	let sendText = () => {
 		props.dispatch(sendTextAction());
@@ -19,7 +21,7 @@ const Content = (props) => {
 	return (
 		<div className={c.content}>
 			<p className={c.title}>Enter your business</p>
-			<textarea className={c.text} ref={newText} placeholder='Enter here'/>
+			<textarea className={c.text} ref={newText} value={text} placeholder='Enter here'/>
 			<button className={c.btn} onClick={sendText}>Add business</button>
 			<div className={c.business}>
 				<TodoList />
